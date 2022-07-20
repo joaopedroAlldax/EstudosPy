@@ -8,11 +8,11 @@ class Area:
 
     def calcular_lata(self):
         self.lata =  float(self.area) / 6
-        print(self.lata)
+        print('Voçê deverá usar: {} latas'.format(self.lata))
 
     def calcular_preco(self):
         self.preco = float(self.lata) * 80
-        print(self.preco)
+        print('Voçê pagará: {} reais'.format(self.preco))
 
 if __name__ == "__main__":
     area1 = input("Digite a area pretendida para pintura em m2: ")

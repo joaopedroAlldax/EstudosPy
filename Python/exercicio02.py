@@ -1,4 +1,3 @@
-from mimetypes import init
 
 class Conversao:
     def __init__(self, dolar, real):
