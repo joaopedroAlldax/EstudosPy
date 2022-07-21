@@ -7,8 +7,6 @@ class User:
         self.altura = altura
         self.peso = peso
 
-        # instanciando objeto
-
     def mostrar_dados(self):
         print(f'Meu nome é: {self.nome}, Minha idade é: {self.idade}, Minha altura é: {self.altura}m.')
 
