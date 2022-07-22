@@ -46,7 +46,17 @@ class Posto:
             pass
     
 if __name__ == '__main__':
-    ...
+    quantidade = float(input("Quantos Litros você deseja abastecer ?"))
+    combustivel = input("Você que abastecer com Alcool [A] ou Gasolina [G]?")
+    user = Posto(quantidade)
+    if combustivel == 'A':
+        user.valor_a_pagar_alcool()
+        user.alcool()
+    elif combustivel == 'G':
+        user.valor_a_pagar_gasol()
+        user.gasolina()
+    else:
+        pass
 
 
         
