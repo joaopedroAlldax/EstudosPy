@@ -18,36 +18,35 @@ class Posto:
 
     def alcool(self):
         if self.quantidade <= 20:
-            self.valor_pago_desconto = self.valor_pago * 0.03 
-            print(f"Você deverá pagar (desconto vigente): {self.valor_pago_desconto}")
+            self.valor_desconto = self.valor_pago * 0.03 
+            print(f"Seu desconto é de: {self.valor_desconto}")
+            self.valor_pago_desconto = self.valor_pago - self.valor_desconto
+            print(f"Você deverá pagar (desconto vigente): {self.valor_pago_desconto} ")
         elif self.quantidade > 20:
-            self.valor_pago_desconto = self.valor_pago * 0.05
-            print(f"Você deverá pagar (desconto vigente): {self.valor_pago_desconto}")
+            self.valor_desconto = self.valor_pago * 0.05
+            print(f"Seu desconto é de: {self.valor_desconto}")
+            self.valor_pago_desconto = self.valor_pago - self.valor_desconto
+            print(f"Você deverá pagar (desconto vigente): {self.valor_pago_desconto} ")
         else:
             pass
 
     def gasolina(self):
         if self.quantidade <= 20:
-            self.valor_pago_desconto = self.valor_pago * 0.04
-            print(f"Você deverá pagar: {self.valor_pago_desconto}")
+            self.valor_desconto = self.valor_pago * 0.04
+            print(f"Seu desconto é de: {self.valor_desconto}")
+            self.valor_pago_desconto = self.valor_pago - self.valor_desconto
+            print(f"Você deverá pagar (desconto vigente): {self.valor_pago_desconto} ")
         elif self.quantidade > 20:
-            self.valor_pago_desconto = self.valor_pago * 0.06
+            self.valor_desconto = self.valor_pago * 0.06
+            print(f"Seu desconto é de: {self.valor_desconto}")
+            self.valor_pago_desconto = self.valor_pago - self.valor_desconto
+            print(f"Você deverá pagar (desconto vigente): {self.valor_pago_desconto} ")
+            
         else:
             pass
     
 if __name__ == '__main__':
-
-    quantidade = float(input("Quantos Litros você deseja abastecer ?"))
-    combustivel = input("Você que abastecer com Alcool [A] ou Gasolina [G]?")
-    user = Posto(quantidade)
-    if combustivel == 'A':
-        user.valor_a_pagar_alcool()
-        user.alcool()
-    elif combustivel == 'G':
-        user.valor_a_pagar_gasol()
-        user.gasolina()
-    else:
-        pass
+    ...
 
 
         
