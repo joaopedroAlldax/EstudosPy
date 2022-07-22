@@ -47,8 +47,8 @@ if __name__ == '__main__':
     valor_sindicato = ''
     descontos = ''
     valor_salario_liquido = ''
-    salario_hora = int(input("Quando você ganha por hora trabalhada?"))
-    horas_mes = int(input("Quantas horas trabalhadas por mês?"))
+    salario_hora = input("Quando você ganha por hora trabalhada?")
+    horas_mes = input("Quantas horas trabalhadas por mês?")
     user = Salario(salario_hora, horas_mes, salario_bruto, valor_inss, valor_sindicato, descontos, valor_salario_liquido)
     user.salario_mensal_bruto()
     user.desconto_inss()

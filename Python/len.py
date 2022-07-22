@@ -1,8 +1,6 @@
 """Estudo sobre a função len, que consiste na contagem de caracteres existentes na string
     o len leva em consideração os espaços do teclado"""
 
-
-
 usuario = input("qual é o seu nome? ")
 qnt_caracteres = len(usuario)
 print(qnt_caracteres)

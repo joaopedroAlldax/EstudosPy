@@ -30,13 +30,14 @@ class Crime:
                 self.qnt_positivo +=1
             else:
                 pass
+ 
 
     def julgamento(self):
         if self.qnt_positivo < 2:
             print(f'Você é inocente')
         elif self.qnt_positivo == 2:
             print(f'Você é suspeito')
-        elif self.qnt_positivo == 3 or 4:
+        elif self.qnt_positivo == 3 or self.qnt_positivo == 4:
             print(f'Você é Cumplice')
         elif self.qnt_positivo == 5:
             print(f'Você é culpado')
